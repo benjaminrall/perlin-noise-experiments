@@ -15,7 +15,7 @@ pygame.display.set_icon(ICON_IMG)
 screen = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
 
 clock = pygame.time.Clock()
-cam = Camera(1920, 0, 1, screen)
+cam = Camera(0, 0, 1, screen)
 world = World(0)
 
 world.render_world(cam)
