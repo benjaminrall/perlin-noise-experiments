@@ -4,10 +4,8 @@ import random
 from world import World
 from world import Camera
 
-pygame.init()
-
-WIN_WIDTH = 1920
-WIN_HEIGHT = 1080
+WIN_WIDTH = 800
+WIN_HEIGHT = 600
 ICON_IMG = pygame.image.load(os.path.join("imgs", "icon.png"))
 
 pygame.display.set_caption("Terrain Generator")
