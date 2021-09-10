@@ -128,8 +128,6 @@ class PerlinNoise:
         self.generate_tables(256)
 
     def noise(self, x, y, octave):
-        height = random.randrange(0, 101) / 100
-
         gx = (x - (x % octave)) / octave
         gy = (y - (y % octave)) / octave
 
@@ -180,8 +178,7 @@ class PerlinNoise:
         return self.permutation_table[self.permutation_table[pos[0]] + pos[1]]
 
     def lerp(self, a, b, w):
-        val = a + w * (b - a)
-        return val
+        return a + w * (b - a)
 
 
 # random_function(x) such that
